@@ -1,0 +1,16 @@
+{
+    "name": "HUEBR",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "Faça busca no twitter com essa extensão.",
+    "browser_action": {
+        "default_icon": "128.png"
+    },
+    "icons": {
+        "128": "128.png"
+    },
+    "content_scripts": [{
+        "matches": ["http://g1.globo.com/*"],
+        "js": ["huebr.js"]
+    }]
+}
